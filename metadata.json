@@ -1,0 +1,6 @@
+{
+  "name": "YAS HRIS - Yuni Abadi Sejahtera",
+  "description": "Sistem Bank Data & Manajemen Kepegawaian Yuni Abadi Sejahtera Kabupaten Karawang lengkap dengan CRUD, audit log, arsip pegawai, dan laporan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

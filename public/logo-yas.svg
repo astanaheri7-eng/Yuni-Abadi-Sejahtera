@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Blue 3D Gradients -->
+    <linearGradient id="blueGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="45%" stop-color="#0044aa" />
+      <stop offset="85%" stop-color="#002266" />
+      <stop offset="100%" stop-color="#001144" />
+    </linearGradient>
+    <linearGradient id="blueHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="blueShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#001a4d" />
+      <stop offset="100%" stop-color="#003380" />
+    </linearGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe277" />
+      <stop offset="25%" stop-color="#e8b839" />
+      <stop offset="50%" stop-color="#c68a18" />
+      <stop offset="75%" stop-color="#f5d461" />
+      <stop offset="100%" stop-color="#996300" />
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff6cc" />
+      <stop offset="30%" stop-color="#f5cf47" />
+      <stop offset="70%" stop-color="#d49a1f" />
+      <stop offset="100%" stop-color="#ffea8a" />
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a5600" />
+      <stop offset="50%" stop-color="#543300" />
+      <stop offset="100%" stop-color="#a66e0a" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#001738" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Base Shadow beneath logo -->
+    <ellipse cx="400" cy="380" rx="340" ry="12" fill="#001833" opacity="0.12" filter="blur(8px)" />
+
+    <!-- Letter Y (Metallic Blue with Bevel Facets) -->
+    <!-- Y Left Arm -->
+    <polygon points="120,90 225,90 290,210 215,210" fill="url(#blueHighlight)" />
+    <polygon points="215,210 290,210 290,380 200,380 200,240" fill="url(#blueGrad1)" />
+    <!-- Y Right Arm (Behind A) -->
+    <polygon points="350,90 440,90 325,235 260,210" fill="url(#blueShade)" />
+    <!-- Y Bevel edge -->
+    <polygon points="120,90 145,120 230,120 225,90" fill="#7dd3fc" opacity="0.6" />
+
+    <!-- Letter A (Blue Peak with Bevel & Window) -->
+    <!-- A Left Leg -->
+    <polygon points="390,90 470,90 330,380 250,380" fill="url(#blueHighlight)" />
+    <!-- A Right Leg -->
+    <polygon points="470,90 535,90 640,380 560,380" fill="url(#blueGrad1)" />
+    <!-- A Center Ridge / Bevel -->
+    <polygon points="470,90 470,290 430,380 390,380 470,90" fill="url(#blueShade)" opacity="0.75" />
+
+    <!-- House Windows inside A (Warm Golden 4-panes) -->
+    <g transform="translate(425, 230)">
+      <rect x="0" y="0" width="22" height="22" rx="2" fill="#e5a11c" />
+      <rect x="26" y="0" width="22" height="22" rx="2" fill="#fbd359" />
+      <rect x="0" y="26" width="22" height="22" rx="2" fill="#c6820a" />
+      <rect x="26" y="26" width="22" height="22" rx="2" fill="#e5a11c" />
+    </g>
+
+    <!-- Letter S (Golden Dynamic Ribbon) -->
+    <!-- Top Arc of S -->
+    <path d="M 680,185 C 640,110 540,105 480,140 C 440,165 440,215 500,240 C 580,270 730,275 730,370 C 730,465 570,470 470,420 C 420,395 400,350 430,320 C 445,305 470,305 485,325 C 510,355 580,385 640,360 C 670,345 665,305 600,285 C 520,260 400,240 400,160 C 400,85 520,40 640,65 C 680,75 725,110 740,150 Z" 
+          fill="url(#goldGrad1)" stroke="#b87d00" stroke-width="1.5" />
+    
+    <!-- Top Highlight ribbon on S -->
+    <path d="M 640,75 C 680,85 710,115 725,145 C 695,120 645,100 580,95 C 490,90 425,130 425,170 C 425,200 450,225 510,245 C 530,225 530,195 565,175 C 605,150 655,145 680,185 Z" 
+          fill="url(#goldHighlight)" opacity="0.85" />
+
+    <!-- Swoosh Arc extending around the bottom-left -->
+    <!-- Blue outer track for swoosh -->
+    <path d="M 100,320 C 80,240 160,330 250,330 C 350,330 520,240 740,130 C 750,150 680,200 560,270 C 400,360 220,385 100,320 Z" 
+          fill="url(#blueGrad1)" />
+    <!-- Gold inner glowing sweep -->
+    <path d="M 85,300 C 95,355 180,380 280,360 C 420,330 600,230 750,140 C 730,150 600,250 440,320 C 300,380 140,390 85,300 Z" 
+          fill="url(#goldGrad1)" stroke="#fef08a" stroke-width="1" />
+  </g>
+
+  <!-- Typography: YUNI ABADI SEJAHTERA -->
+  <g transform="translate(400, 440)" text-anchor="middle">
+    <!-- Left gold bar -->
+    <line x1="-340" y1="-14" x2="-230" y2="-14" stroke="url(#goldGrad1)" stroke-width="4.5" stroke-linecap="round" />
+    
+    <!-- Main text -->
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Cinzel', 'Arial Black', sans-serif" font-weight="800" font-size="34" letter-spacing="4" fill="#002b66">
+      YUNI ABADI SEJAHTERA
+    </text>
+    
+    <!-- Right gold bar -->
+    <line x1="230" y1="-14" x2="340" y2="-14" stroke="url(#goldGrad1)" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom Gold Diamond Ornament -->
+  <g transform="translate(400, 475)">
+    <!-- Thin line left -->
+    <line x1="-240" y1="0" x2="-35" y2="0" stroke="url(#goldGrad1)" stroke-width="2" />
+    
+    <!-- Center diamonds -->
+    <polygon points="-24,0 -16,-6 -8,0 -16,6" fill="url(#goldGrad1)" />
+    <polygon points="0,-10 12,0 0,10 -12,0" fill="url(#goldHighlight)" stroke="#996300" stroke-width="1" />
+    <polygon points="24,0 16,-6 8,0 16,6" fill="url(#goldGrad1)" />
+    
+    <!-- Thin line right -->
+    <line x1="35" y1="0" x2="240" y2="0" stroke="url(#goldGrad1)" stroke-width="2" />
+  </g>
+</svg>

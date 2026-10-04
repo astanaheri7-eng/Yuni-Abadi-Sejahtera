@@ -1,0 +1,97 @@
+{
+  "entities": {
+    "Employee": {
+      "title": "Employee",
+      "description": "Employee record in YAS HRIS",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "employee_number": { "type": "string" },
+        "name": { "type": "string" },
+        "nik": { "type": "string" },
+        "department": { "type": "string" },
+        "position": { "type": "string" },
+        "employment_status": { "type": "string" },
+        "employee_status": { "type": "string" },
+        "join_date": { "type": "string" },
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" }
+      },
+      "required": ["id", "employee_number", "name"]
+    },
+    "User": {
+      "title": "User",
+      "description": "System user account",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "username": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "username", "role"]
+    },
+    "Payroll": {
+      "title": "Payroll",
+      "description": "Salary slip record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "employee_id": { "type": "string" },
+        "employee_name": { "type": "string" },
+        "period_month": { "type": "string" },
+        "period_year": { "type": "number" },
+        "net_salary": { "type": "number" }
+      },
+      "required": ["id", "employee_id", "period_month"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "System activity audit log",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "user_id": { "type": "string" },
+        "action": { "type": "string" },
+        "description": { "type": "string" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["id", "action", "description"]
+    },
+    "Settings": {
+      "title": "Settings",
+      "description": "Organization and HRIS settings",
+      "type": "object",
+      "properties": {
+        "organization_name": { "type": "string" },
+        "app_name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "primary_color": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/employees/{employeeId}": {
+      "schema": "Employee",
+      "description": "Collection of employee profiles"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Collection of system user profiles"
+    },
+    "/payroll/{payrollId}": {
+      "schema": "Payroll",
+      "description": "Collection of monthly payroll records"
+    },
+    "/audit_logs/{logId}": {
+      "schema": "AuditLog",
+      "description": "Collection of system audit logs"
+    },
+    "/settings/{settingId}": {
+      "schema": "Settings",
+      "description": "HRIS application and organization settings"
+    }
+  }
+}
